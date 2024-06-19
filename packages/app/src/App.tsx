@@ -73,7 +73,7 @@ const app = createApp({
   themes: [
     {
       id: 'light',
-      title: 'Light',
+      title: '浅色',
       variant: 'light',
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={themes.light} children={children} />
@@ -81,7 +81,7 @@ const app = createApp({
     },
     {
       id: 'dark',
-      title: 'Dark',
+      title: '深色',
       variant: 'dark',
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={themes.dark} children={children} />
@@ -89,7 +89,7 @@ const app = createApp({
     },
     {
       id: 'aperture',
-      title: 'Aperture',
+      title: '自动',
       variant: 'light',
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={apertureTheme} noCssBaseline>
