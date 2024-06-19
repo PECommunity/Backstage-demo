@@ -18,7 +18,7 @@ export const useLogoStyles = makeStyles(theme => ({
 export const tools = [
   {
     url: 'https://backstage.io/docs',
-    label: 'Docs',
+    label: '文档',
     icon: <TemplateBackstageLogoIcon />,
   },
   {
@@ -28,17 +28,17 @@ export const tools = [
   },
   {
     url: 'https://github.com/backstage/backstage/blob/master/CONTRIBUTING.md',
-    label: 'Contributing',
+    label: '贡献',
     icon: <TemplateBackstageLogoIcon />,
   },
   {
     url: 'https://backstage.io/plugins',
-    label: 'Plugins Directory',
+    label: '插件目录',
     icon: <TemplateBackstageLogoIcon />,
   },
   {
     url: 'https://github.com/backstage/backstage/issues/new/choose',
-    label: 'Submit New Issue',
+    label: '提交新 Issue',
     icon: <TemplateBackstageLogoIcon />,
   },
 ];
