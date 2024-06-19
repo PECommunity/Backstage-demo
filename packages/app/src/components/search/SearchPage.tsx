@@ -47,7 +47,7 @@ const SearchPage = () => {
   const catalogApi = useApi(catalogApiRef);
   return (
     <Page themeId="home">
-      <Header title="Search" />
+      <Header title="搜索" />
       <Content>
         <Grid container direction="row">
           <Grid item xs={12}>
