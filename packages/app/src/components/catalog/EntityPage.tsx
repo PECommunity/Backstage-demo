@@ -71,7 +71,7 @@ const EntityLayoutWrapper = (props: { children?: React.ReactNode }) => {
   const extraMenuItems = useMemo(() => {
     return [
       {
-        title: 'Badges',
+        title: '勋章',
         Icon: BadgeIcon,
         onClick: () => setBadgesDialogOpen(true),
       },
@@ -127,9 +127,9 @@ const cicdContent = (
 
     <EntitySwitch.Case>
       <EmptyState
-        title="No CI/CD available for this entity"
+        title="该实体没有可用的 CI/CD"
         missing="info"
-        description="You need to add an annotation to your component if you want to enable CI/CD for it. You can read more about annotations in Backstage by clicking the button below."
+        description="如果要为组件启用 CI/CD ，你需要给其添加注释。点击下列按钮，了解Backstage中有关注释的更多信息。"
         action={
           <Button
             variant="contained"
@@ -179,7 +179,7 @@ const overviewContent = (
 
 const serviceEntityPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       {overviewContent}
     </EntityLayout.Route>
 
@@ -206,7 +206,7 @@ const serviceEntityPage = (
       </Grid>
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/dependencies" title="Dependencies">
+    <EntityLayout.Route path="/dependencies" title="依赖">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item xs={12} md={6}>
           <EntityDependsOnComponentsCard variant="gridItem" />
@@ -217,11 +217,11 @@ const serviceEntityPage = (
       </Grid>
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/docs" title="Docs">
+    <EntityLayout.Route path="/docs" title="文档">
       <EntityTechdocsContent />
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/todos" title="TODOs">
+    <EntityLayout.Route path="/todos" title="待办">
       <EntityTodoContent />
     </EntityLayout.Route>
   </EntityLayoutWrapper>
@@ -229,7 +229,7 @@ const serviceEntityPage = (
 
 const websiteEntityPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       {overviewContent}
     </EntityLayout.Route>
 
@@ -245,7 +245,7 @@ const websiteEntityPage = (
       {cicdContent}
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/dependencies" title="Dependencies">
+    <EntityLayout.Route path="/dependencies" title="依赖">
       <Grid container spacing={3} alignItems="stretch">
         <Grid item xs={12} md={6}>
           <EntityDependsOnComponentsCard variant="gridItem" />
@@ -256,11 +256,11 @@ const websiteEntityPage = (
       </Grid>
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/docs" title="Docs">
+    <EntityLayout.Route path="/docs" title="文档">
       <EntityTechdocsContent />
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/todos" title="TODOs">
+    <EntityLayout.Route path="/todos" title="待办">
       <EntityTodoContent />
     </EntityLayout.Route>
   </EntityLayoutWrapper>
@@ -268,15 +268,15 @@ const websiteEntityPage = (
 
 const defaultEntityPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       {overviewContent}
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/docs" title="Docs">
+    <EntityLayout.Route path="/docs" title="文档">
       <EntityTechdocsContent />
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/todos" title="TODOs">
+    <EntityLayout.Route path="/todos" title="待办">
       <EntityTodoContent />
     </EntityLayout.Route>
   </EntityLayoutWrapper>
@@ -298,7 +298,7 @@ const componentPage = (
 
 const apiPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       <Grid container spacing={3}>
         {entityWarningContent}
         <Grid item xs={12} md={6}>
@@ -318,7 +318,7 @@ const apiPage = (
       </Grid>
     </EntityLayout.Route>
 
-    <EntityLayout.Route path="/definition" title="Definition">
+    <EntityLayout.Route path="/definition" title="定义">
       <Grid container spacing={3}>
         <Grid item xs={12}>
           <EntityApiDefinitionCard />
@@ -330,7 +330,7 @@ const apiPage = (
 
 const userPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       <Grid container spacing={3}>
         {entityWarningContent}
         <Grid item xs={12} md={6}>
@@ -346,7 +346,7 @@ const userPage = (
 
 const groupPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       <Grid container spacing={3}>
         {entityWarningContent}
         <Grid item xs={12} md={6}>
@@ -368,7 +368,7 @@ const groupPage = (
 
 const systemPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       <Grid container spacing={3} alignItems="stretch">
         {entityWarningContent}
         <Grid item xs={12} md={6}>
@@ -385,7 +385,7 @@ const systemPage = (
         </Grid>
       </Grid>
     </EntityLayout.Route>
-    <EntityLayout.Route path="/diagram" title="Diagram">
+    <EntityLayout.Route path="/diagram" title="图表">
       <EntityCatalogGraphCard />
     </EntityLayout.Route>
   </EntityLayoutWrapper>
@@ -393,7 +393,7 @@ const systemPage = (
 
 const domainPage = (
   <EntityLayoutWrapper>
-    <EntityLayout.Route path="/" title="Overview">
+    <EntityLayout.Route path="/" title="概览">
       <Grid container spacing={3} alignItems="stretch">
         {entityWarningContent}
         <Grid item xs={12} md={6}>
