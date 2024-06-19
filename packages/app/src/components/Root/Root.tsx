@@ -76,21 +76,21 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
   <SidebarPage>
     <Sidebar>
       <SidebarLogo />
-      <SidebarGroup label="Search" icon={<SearchIcon />} to="/search">
+      <SidebarGroup label="搜索" icon={<SearchIcon />} to="/search">
         <SidebarSearchModal />
       </SidebarGroup>
       <SidebarDivider />
-      <SidebarGroup label="Menu" icon={<MenuIcon />}>
-        <SidebarItem icon={HomeIcon} to="home" text="Home" />
-        <SidebarItem icon={CategoryIcon} to="/" text="Catalog" />
+      <SidebarGroup label="菜单" icon={<MenuIcon />}>
+        <SidebarItem icon={HomeIcon} to="home" text="主页" />
+        <SidebarItem icon={CategoryIcon} to="/" text="目录" />
         <SidebarItem icon={ExtensionIcon} to="api-docs" text="APIs" />
-        <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />
-        <SidebarItem icon={CreateComponentIcon} to="create" text="Create..." />
-        <SidebarItem icon={LayersIcon} to="explore" text="Explore" />
+        <SidebarItem icon={LibraryBooks} to="docs" text="文档" />
+        <SidebarItem icon={CreateComponentIcon} to="create" text="新建..." />
+        <SidebarItem icon={LayersIcon} to="explore" text="浏览" />
       </SidebarGroup>
       <SidebarDivider />
-      <SidebarItem icon={MapIcon} to="tech-radar" text="Tech Radar" />
-      <SidebarItem icon={MoneyIcon} to="cost-insights" text="Cost Insights" />
+      <SidebarItem icon={MapIcon} to="tech-radar" text="技术雷达" />
+      <SidebarItem icon={MoneyIcon} to="cost-insights" text="成本洞察" />
       <SidebarItem icon={GraphiQLIcon} to="graphiql" text="GraphiQL" />
       <SidebarSpace />
       <SidebarDivider />
